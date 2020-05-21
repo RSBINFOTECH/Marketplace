@@ -32,7 +32,7 @@
   
   div.content {
     margin-left: 200px;
-    padding: 1px 16px;
+    padding: 10px 16px;
     height: 1000px;
   }
   
@@ -156,7 +156,7 @@
   
   /* Fake image, just for this example */
   .fakeimg {
-    background-color: #aaa;
+    background-color:white;
     width: 100%;
     padding: 20px;
   }
@@ -170,6 +170,8 @@
   {
 
     height:200px;
+    background-color: rgb(236, 214, 236);
+    height:auto;
   }
   
   /* Footer */
@@ -193,4 +195,8 @@
       width: 100%;
       height: fit-content;
     }
+  }
+
+  h2 {
+    border-bottom: 4px dotted blue;
   }
