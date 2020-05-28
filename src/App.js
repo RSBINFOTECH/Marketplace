@@ -18,14 +18,19 @@ class Homepage extends Component {
 <div class="row">
 <div class="side">
   <span>
-  <img src="./images/leaf.png" width="300" height="400" alt="leaf-main-image" />
+  <img src="./images/leaf.png" width="100" height="100" alt="leaf-main-image" />
   </span>
-    <h2>About Me</h2>
+    <h2>Technical Architect</h2>
     <div class="fakeimg"  id="style1">
-    A family guy with fun loving nature. Love computers, programming and solving everyday problems. Find me on Facebook and Twitter.
+    My goal is to apply my technical skills in Java design and implementation, 
+    
+     systems configuration and troubleshooting operations to fulfill the company’
+     score goals. I aim to bring success to the company by designing, 
+     integrating, and updating frameworks to sustain Java applications and providing solutions to address technical issues possibly encountered in a Java environment. My years of experience broadened my knowledge on Java technologies and enhanced my abilities in spotting trends, flaws, and developing upgrades concerning these as well. With my expertise and commitment to become a productive team player,
+    I am confident that I can be an asset to the company.
       
         </div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+   
     <h3>More Text</h3>
     <p>Lorem ipsum dolor sit ame.</p>
     <div class="fakeimg"  id="style">  <img src="./images/logo.png" width="100" alt="logo" /></div><br/>
