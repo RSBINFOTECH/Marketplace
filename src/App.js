@@ -6,7 +6,6 @@ class Homepage extends Component {
   render() {
     return (
         <div>
-       
 
 <div class="navbar" >
   <a href="#" class="active">Home</a>
