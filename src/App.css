@@ -148,8 +148,8 @@
   .footer {
     margin-bottom: auto;
     padding: 20px;
-    text-align: center;
-    background: #ddd;
+    text-align:center;
+    background:#ddd;
     height: 100%;
   }
   

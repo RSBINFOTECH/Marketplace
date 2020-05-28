@@ -61,12 +61,48 @@ class Homepage extends Component {
  
 
 <div class="footer">
-  <h2>Footer
-  </h2>
-  <spa>@CopyRight RSB Infotech pvt ltd </spa>
-  <li><span>
-    <a href="portfolio.html" target="_blank">See my portfolio</a>
-</span></li>
+   <div >
+     <table>
+    <tr>    
+    <th> 
+      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+       <th> <a href="https://github.com/codeismyresume" target="_blank">Github</a></th>
+    </tr>
+    <tr>    
+    <th> 
+      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+    </tr>
+    <tr>    
+    <th> 
+      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+    </tr>
+    <tr>    
+    <th> 
+      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+    </tr>
+    <tr>    
+    <th> 
+      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+    </tr>
+     <tr>    
+    <th> 
+      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+    </tr>
+      
+
+     </table>
+    
+ <span>
+  @CopyRight RSB Infotech pvt ltd 
+  </span>
+
+   </div>
+
 </div>
 
 </div>
