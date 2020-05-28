@@ -47,65 +47,46 @@ class Homepage extends Component {
   <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
 
 </div>
-    </div>
-    <div>
-    <span class="label success">Success</span>
-   <span class="label info">Info</span>
-  <span class="label warning">Warning</span>
-  <span class="label danger">Danger</span>
-   <span class="label other">Other</span>
-
-
-    </div>
+</div>
+    <div id="main">
+  <div >RED</div>
+ 
+</div>
 </div>
  
 
 <div class="footer">
-   <div >
-     <table>
-    <tr>    
-    <th> 
-      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
-       <th> <a href="https://github.com/codeismyresume" target="_blank">Github</a></th>
+   
+  <table class="w3-table">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
     </tr>
-    <tr>    
-    <th> 
-      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
-       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
     </tr>
-    <tr>    
-    <th> 
-      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
-       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
     </tr>
-    <tr>    
-    <th> 
-      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
-       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
     </tr>
-    <tr>    
-    <th> 
-      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
-       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
-    </tr>
-     <tr>    
-    <th> 
-      <a href="portfolio.html" target="_blank">See my portfolio</a></th>
-       <th> <a href="portfolio.html" target="_blank">See my portfolio</a></th>
-    </tr>
-      
-
-     </table>
-    
- <span>
-  @CopyRight RSB Infotech pvt ltd 
+  </table>
+  <span>
+ <h2> @CopyRight RSB Infotech pvt ltd  2020</h2>
   </span>
+</div>
+
 
    </div>
 
-</div>
-
-</div>
     );
   }
 }
