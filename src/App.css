@@ -3,32 +3,6 @@
     font-family: "Lato", sans-serif;
   }
   
-  .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-   
-  .sidebar a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
   
   div.content {
     margin-left: 200px;
@@ -55,15 +29,14 @@
 
 
 
-/* #footer { 
+ #footer { 
     position: fixed; 
     padding: 10px 10px 0px 10px; 
     bottom: 0; 
     width: 100%; 
-    /* Height of the footer*/  
-    /* height: 90px; 
-    background: grey; 
-}  */
+     
+    background:grey; 
+}  
 /* .header, .footer {
     height: 40px;
     padding: 5px;
@@ -156,29 +129,28 @@
   
   /* Fake image, just for this example */
   .fakeimg {
+    text-decoration-color: thistle;
     background-color:white;
     width: 100%;
     padding: 20px;
-  }
-  #style
-  {
 
-    height:60px;
   }
-
+  
   #style1
   {
 
-    height:200px;
+   height: fit-content;
     background-color: rgb(236, 214, 236);
-    height:auto;
+
   }
   
   /* Footer */
   .footer {
+    margin-bottom: auto;
     padding: 20px;
     text-align: center;
     background: #ddd;
+    height: 100%;
   }
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -196,5 +168,13 @@
       height: fit-content;
     }
   }
-
-  
+  .label {
+    color: white;
+    padding: 8px;
+    font-family: Arial;
+  }
+  .success {background-color: #4CAF50;} /* Green */
+  .info {background-color: #2196F3;} /* Blue */
+  .warning {background-color: #ff9800;} /* Orange */
+  .danger {background-color: #f44336;} /* Red */ 
+  .other {background-color: #e7e7e7; color: black;} /* Gray */ 
