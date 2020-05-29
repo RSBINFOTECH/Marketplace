@@ -59,28 +59,42 @@ class Homepage extends Component {
    
   <table class="w3-table">
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Points</th>
+      <th>Home</th>
+      <th>Cookies</th>
+      <th>Overview</th>
+      <th>Address</th>
     </tr>
     <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
+      <td>Github Link:<a href="https://github.com/codeismyresume">Github</a></td>
+      <td>Web Design Firms</td>
+      <td>SMS API</td>
+      <td>
+       <div>
+        <label>Enter Nmae: <input type="text"name="name"placeholder="Enter your name? "></input></label>
+       </div>
+      
+
+      </td>
     </tr>
     <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
+    <td>Linkedin Link:<a href="https://www.linkedin.com/in/shyamlal-yadav-1b5a13139/">Linkedin</a></td>
+      <td>About</td>
+      <td>Privacy</td>
+      <td><div><label>Enter Email: <input type="text"name="name" placeholder="Enter your Email? "></input></label></div></td>
+      
+
     </tr>
     <tr>
-      <td>Adam</td>
-      <td>Johnson</td>
-      <td>67</td>
+    <td>Medium Link:<a href="https://medium.com/@shyamyadav_95348">Blog</a></td>
+      <td>Product Design</td>
+      <td>General Design</td>
+      <td><div><label>subscribers:<button>send</button> </label></div>
+</td>
+
     </tr>
   </table>
   <span>
- <h1> @CopyRight RSB Infotech pvt ltd  2020</h1>
+ <div>Copyright © 2020. RSB INFOTECH PVT LTD</div>
   </span>
 </div>
 
