@@ -80,7 +80,7 @@ class Homepage extends Component {
     </tr>
   </table>
   <span>
- <h2> @CopyRight RSB Infotech pvt ltd  2020</h2>
+ <h1> @CopyRight RSB Infotech pvt ltd  2020</h1>
   </span>
 </div>
 
