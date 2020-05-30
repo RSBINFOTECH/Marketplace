@@ -2,7 +2,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "homepage": "https://https://github.com/codeismyresume.github.io/Marketplace",
+  "homepage": "https://https://github.com/codeismyresume.github.io/OST",
   "name": "01-landing-page",
   "version": "0.1.0",
   "private": true,
