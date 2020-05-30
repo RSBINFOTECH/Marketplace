@@ -62,7 +62,7 @@ class Homepage extends Component {
       <th>Home</th>
       <th>Cookies</th>
       <th>Overview</th>
-      <th>Address</th>
+      <th>subscribers</th>
     </tr>
     <tr>
       <td>Github Link:<a href="https://github.com/codeismyresume">Github</a></td>
