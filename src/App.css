@@ -1,191 +1,33 @@
-*{
-    margin: 0;
-    font-family: "Lato", sans-serif;
-  }
-  
-  
-  div.content {
-    margin-left: 200px;
-    padding: 10px 16px;
-    height: 1000px;
-  }
-  
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+.App {
+  text-align: center;
+}
 
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
- #footer { 
-    position: fixed; 
-    padding: 10px 10px 0px 10px; 
-    bottom: 0; 
-    width: 100%; 
-     
-    background:grey; 
-}  
-/* .header, .footer {
-    height: 40px;
-    padding: 5px;
-} */
+.App-link {
+  color: #61dafb;
+}
 
-* {
-    box-sizing: border-box;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  /* Style the body */
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+  to {
+    transform: rotate(360deg);
   }
-  
-  /* Header/logo Title */
-  .header {
-    padding: 80px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-  }
-  
-  /* Increase the font size of the heading */
-  .header h1 {
-    font-size: 40px;
-  }
-  
-  /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
-  .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-  }
-  
-  /* Style the navigation bar links */
-  .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
-  
-  
-  /* Right-aligned link */
-  .navbar a.right {
-    float: right;
-  }
-  
-  /* Change color on hover */
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Active/current link */
-  .navbar a.active {
-    background-color: #666;
-    color: white;
-  }
-  
-  /* Column container */
-  .row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-  }
-  
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    -ms-flex: 30%; /* IE10 */
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-  
-  /* Main column */
-  .main {   
-    -ms-flex: 70%; /* IE10 */
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-  }
-  
-  /* Fake image, just for this example */
-  .fakeimg {
-    text-decoration-color: thistle;
-    background-color:white;
-    width: 100%;
-    padding: 20px;
-
-  }
-  
-  #style1
-  {
-
-   height: fit-content;
-    background-color: rgb(236, 214, 236);
-
-  }
-  
-  /* Footer */
-  .footer {
-    margin-bottom: auto;
-    padding: 20px;
-    text-align:center;
-    background:#ddd;
-    height: 100%;
-  }
-  
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
-    .row {   
-      flex-direction: column;
-    }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-      height: fit-content;
-    }
-  }
-  .label {
-    color: white;
-    padding: 8px;
-    font-family: Arial;
-  }
-  .success {background-color: #4CAF50;} /* Green */
-  .info {background-color: #2196F3;} /* Blue */
-  .warning {background-color: #ff9800;} /* Orange */
-  .danger {background-color: #f44336;} /* Red */ 
-  .other {background-color: #e7e7e7; color: black;} /* Gray */ 
-
-  #main {
-    width: 220px;
-    height: 300px;
-    border: 1px solid black; 
-    display: flex;
-    align-items: center;
-  }
-  #main div {
-    flex: 1;
- }
+}

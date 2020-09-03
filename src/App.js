@@ -1,108 +1,226 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import { withStyles } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
-class Homepage extends Component {
+import Admindashboard from './ADMINDashBoard/Admindashboard'
+
+
+import { Link, Route, Switch } from "react-router-dom";
+
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import myproject from './DashBordGraph/myproject'
+import mycard from './DashBordGraph/mycard'
+import mydashboard from './DashBordGraph/mydashboard'
+import Validation from './ADMINDashBoard/Validation'
+
+
+const drawerWidth = 240;
+
+const styles = theme => ({
+  root: {
+    display: 'flex',
+  },
+  appBar: {
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+  },
+  appBarShift: {
+    width: `calc(100% - ${drawerWidth}px)`,
+    marginLeft: drawerWidth,
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  },
+  menuButton: {
+    marginLeft: 12,
+    marginRight: 20,
+  },
+  hide: {
+    display: 'none',
+  },
+  drawer: {
+    width: drawerWidth,
+    flexShrink: 0,
+  },
+  drawerPaper: {
+    width: drawerWidth,
+  },
+  drawerHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '0 8px',
+    ...theme.mixins.toolbar,
+    justifyContent: 'flex-end',
+  },
+  content: {
+    flexGrow: 1,
+    padding: theme.spacing.unit * 3,
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+    marginLeft: -drawerWidth,
+  },
+  contentShift: {
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+    marginLeft:10,
+  },
+});
+
+class PersistentDrawerLeft extends React.Component {
+  state = {
+    open: false,
+  };
+
+  handleDrawerOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleDrawerClose = () => {
+    this.setState({ open: false });
+  };
+
   render() {
+    const { classes, theme } = this.props;
+    const { open } = this.state;
+
+    let s1 = {verticalAlign: 'middle'};
+    let s2 = {textAlign: 'right'};
+
+
+
     return (
-        <div>
+      <div className={classes.root}>
 
-<div class="navbar" >
-  <a href="#" class="active">Home</a>
-  <a href="#">Github</a>
-  <a href="#">Blog</a>
-  <a href="#" class="right">springBoot</a>
-  <a href="#" class="right">Core Java</a>
-</div>
 
-<div class="row">
-<div class="side">
-  <span>
-  <img src="./images/leaf.png" width="100" height="100" alt="leaf-main-image" />
-  </span>
-    <h2>Woring At Nokia AS Technical Architect</h2>
-    <div class="fakeimg"  id="style1">
-    My goal is to apply my technical skills in Java design and implementation, 
-     systems configuration and troubleshooting operations to fulfill the company’
-     score goals. I aim to bring success to the company by designing, 
-     integrating, and updating frameworks to sustain Java applications and providing solutions to address technical issues possibly encountered in a Java environment. My years of experience broadened my knowledge on Java technologies and enhanced my abilities in spotting trends, flaws, and developing upgrades concerning these as well. With my expertise and commitment to become a productive team player,
-    I am confident that I can be an asset to the company.
-      
-        </div>
-  
-    <div class="fakeimg"> 
-   Architected solutions to health care business problems involving interactive voice response and subscriber oriented health incentive programs.
-   Advised development team on design options in line with Aetna enterprise infrastructure and project life cycle.
-   Engaged as an integrated part of project team and championed project from inception to design/development.
-   Work with business to translate business needs into functional requirements and generated preliminary solutions in conjunction with business/infrastructure/development representatives.
-   Drove high level/detailed designs on architecturally significant components based on Aetna internal standards and presented and articulated proposed solutions to architecture review group.
-   Put together architectural artifacts to form a repository representing point-of-time and finalized architectural conceptual design.
-   Worked with multiple parties to resolve time/budget constraints and resource contention issues.
-   Communicated with infrastructure/fellow architects/enterprise framework group to ensure best practices and address scalability/reusability issues. </div><br/>
-   <div class="container">
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <CssBaseline />
 
-</div>
-</div>
-    <div id="main">
-  <div >RED</div>
- 
-</div>
-</div>
- 
+        <AppBar
 
-<div class="footer">
-   
-  <table class="w3-table">
-    <tr>
-      <th>Home</th>
-      <th>Cookies</th>
-      <th>Overview</th>
-      <th>subscribers</th>
-    </tr>
-    <tr>
-      <td>Github Link:<a href="https://github.com/codeismyresume">Github</a></td>
-      <td>Web Design Firms</td>
-      <td>SMS API</td>
-      <td>
-       <div>
-        <label>Enter Nmae: <input type="text"name="name"placeholder="Enter your name? "></input></label>
-       </div>
-      
+          position="fixed"
+          
+          className={classNames(classes.appBar, {
+            [classes.appBarShift]: open,
+          })}
+        >
+          <Toolbar disableGutters={!open}>
+            <IconButton
+              color="textPrimary"
+              aria-label="Open drawer"
+              onClick={this.handleDrawerOpen}
+              className={classNames(classes.menuButton, open && classes.hide)}
+            >
+             <MenuIcon /><b>open</b>
+            </IconButton>
 
-      </td>
-    </tr>
-    <tr>
-    <td>Linkedin Link:<a href="https://www.linkedin.com/in/shyamlal-yadav-1b5a13139/">Linkedin</a></td>
-      <td>About</td>
-      <td>Privacy</td>
-      <td><div><label>Enter Email: <input type="text"name="name" placeholder="Enter your Email? "></input></label></div></td>
+            
+            {/* <Typography variant="body2" color="textSecondary" align="center"> */}
+            
+            <div className="text-right" >
+           <h>Marketplace</h>
+              </div>
+             
+
+
+            {/* </Typography> */}
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          className={classes.drawer}
+          variant="persistent"
+          anchor="left"
+          open={open}
+          classes={{
+            paper: classes.drawerPaper,
+          }}
+        >
+          <div className={classes.drawerHeader}>
+
+            <IconButton onClick={this.handleDrawerClose}><h1><b>Marketplace</b> </h1>
+              {theme.direction === 'ltr' ? <ChevronLeftIcon /> :<ChevronRightIcon />       }
+
+            </IconButton>
+          </div>
+          <Divider />
+          
+
+
+          
+          <h><Link to="/myproject">myproject</Link></h>
+          <h><Link to="/mycard">mycard</Link></h>
+          <h><Link to="/mydashboard">mydashboard</Link></h>
+       
+          <h><Link to="/Admindashboard">Admindashboard</Link></h>
+          <h><Link to="/Validation">Validation</Link></h>
+
+
+
+         
+
+       
       
 
-    </tr>
-    <tr>
-    <td>Medium Link:<a href="https://medium.com/@shyamyadav_95348">Blog</a></td>
-      <td>Product Design</td>
-      <td>General Design</td>
-      <td><div><label>subscribers:<button>send</button> </label></div>
-</td>
+          <Divider />
+         
+        </Drawer>
+        <main
+          className={classNames(classes.content, {
+            [classes.contentShift]: open,
+          })}
+        >
 
-    </tr>
-  </table>
-  <span>
- <div>Copyright © 2020. RSB INFOTECH PVT LTD</div>
-  </span>
-</div>
+          <div className={classes.drawerHeader} />
+          <Typography paragraph>
+          
+
+          <Switch>
+          
+          <Route path="/myproject" component={myproject} />
+          <Route path="/mycard" component={mycard} />
+          <Route path="/mydashboard" component={mydashboard} />
+          <Route path="/Admindashboard" component={Admindashboard} />
+          <Route path="/Validation" component={Validation} />
 
 
-   </div>
 
+
+
+        </Switch>
+
+
+          </Typography>
+         
+        </main>
+
+        
+      </div>
     );
   }
 }
 
-export default Homepage;
+PersistentDrawerLeft.propTypes = {
+  classes: PropTypes.object.isRequired,
+  theme: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles, { withTheme: true })(PersistentDrawerLeft);
