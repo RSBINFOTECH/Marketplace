@@ -1,0 +1,4 @@
+applications:MarketPlace
+ path:/target/MarketPlace-0.0.1-SNAPSHOT.jar
+ memeory:300MB
+  
